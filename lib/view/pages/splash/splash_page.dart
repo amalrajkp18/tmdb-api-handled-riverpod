@@ -9,11 +9,14 @@ class SplashPage extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    return switch (ref.watch(splashControllerProvider)) {
-      AsyncData(:final value) => value,
-      _ => Center(
-          child: Lottie.asset("assets/lottie/lottie_splash.json"),
-        ),
-    };
+    return ref.watch(splashControllerProvider).when(
+          data: (data) => data,
+          error: (error, stackTrace) => Center(
+            child: Text("$error"),
+          ),
+          loading: () => Center(
+            child: Lottie.asset("assets/lottie/lottie_splash.json"),
+          ),
+        );
   }
 }
