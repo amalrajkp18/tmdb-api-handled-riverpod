@@ -1,26 +1,26 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 
-part of 'theme_controller.dart';
+part of 'top_rated_movies.dart';
 
 // **************************************************************************
 // RiverpodGenerator
 // **************************************************************************
 
-String _$themeControllerHash() => r'c5e762fa94ff34bd8bc785f208dd1035533ad9e5';
+String _$topRatedMoviesHash() => r'183125401cc1c577ab47b39e957bb12b04a31389';
 
-/// See also [ThemeController].
-@ProviderFor(ThemeController)
-final themeControllerProvider =
-    NotifierProvider<ThemeController, bool>.internal(
-  ThemeController.new,
-  name: r'themeControllerProvider',
+/// See also [topRatedMovies].
+@ProviderFor(topRatedMovies)
+final topRatedMoviesProvider =
+    AutoDisposeFutureProvider<MovieAllModel>.internal(
+  topRatedMovies,
+  name: r'topRatedMoviesProvider',
   debugGetCreateSourceHash: const bool.fromEnvironment('dart.vm.product')
       ? null
-      : _$themeControllerHash,
+      : _$topRatedMoviesHash,
   dependencies: null,
   allTransitiveDependencies: null,
 );
 
-typedef _$ThemeController = Notifier<bool>;
+typedef TopRatedMoviesRef = AutoDisposeFutureProviderRef<MovieAllModel>;
 // ignore_for_file: type=lint
 // ignore_for_file: subtype_of_sealed_class, invalid_use_of_internal_member, invalid_use_of_visible_for_testing_member

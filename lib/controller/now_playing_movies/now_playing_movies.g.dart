@@ -1,26 +1,27 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 
-part of 'theme_controller.dart';
+part of 'now_playing_movies.dart';
 
 // **************************************************************************
 // RiverpodGenerator
 // **************************************************************************
 
-String _$themeControllerHash() => r'c5e762fa94ff34bd8bc785f208dd1035533ad9e5';
+String _$nowPlayingMoviesHash() => r'3e5bff02ed8ddabf01e2df7bfe4ca3482f3b0460';
 
-/// See also [ThemeController].
-@ProviderFor(ThemeController)
-final themeControllerProvider =
-    NotifierProvider<ThemeController, bool>.internal(
-  ThemeController.new,
-  name: r'themeControllerProvider',
+/// See also [nowPlayingMovies].
+@ProviderFor(nowPlayingMovies)
+final nowPlayingMoviesProvider =
+    AutoDisposeFutureProvider<NowPlayingMovieModel>.internal(
+  nowPlayingMovies,
+  name: r'nowPlayingMoviesProvider',
   debugGetCreateSourceHash: const bool.fromEnvironment('dart.vm.product')
       ? null
-      : _$themeControllerHash,
+      : _$nowPlayingMoviesHash,
   dependencies: null,
   allTransitiveDependencies: null,
 );
 
-typedef _$ThemeController = Notifier<bool>;
+typedef NowPlayingMoviesRef
+    = AutoDisposeFutureProviderRef<NowPlayingMovieModel>;
 // ignore_for_file: type=lint
 // ignore_for_file: subtype_of_sealed_class, invalid_use_of_internal_member, invalid_use_of_visible_for_testing_member

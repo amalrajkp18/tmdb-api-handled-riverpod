@@ -7,11 +7,12 @@ part 'onboard_controller.g.dart';
 class OnboardController extends _$OnboardController {
   @override
   bool build() {
-    return Preference.onboardPref.getBool('onboard') ?? false;
+    return Preference.sharedPreferences.getBool('onboard') ?? false;
   }
 
   void onboardIsLoaded() {
     state = !state;
-    Preference.onboardPref.setBool('onboard', state);
+    // assign is user logged or not
+    Preference.sharedPreferences.setBool('onboard', state);
   }
 }

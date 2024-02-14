@@ -10,6 +10,7 @@ part 'splash_controller.g.dart';
 Future<Widget> splashController(SplashControllerRef ref) async {
   return Future.delayed(
     const Duration(seconds: 3),
+    // check user is logged or not using sharedPreference
     () => ref.watch(onboardControllerProvider)
         ? const MainPage()
         : const AuthHomePage(),

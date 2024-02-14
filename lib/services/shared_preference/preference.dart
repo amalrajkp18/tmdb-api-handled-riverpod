@@ -1,10 +1,10 @@
 import 'package:shared_preferences/shared_preferences.dart';
 
 class Preference {
-  static late final SharedPreferences onboardPref;
+  static late final SharedPreferences sharedPreferences;
 
   Preference._create(SharedPreferences preferences) {
-    onboardPref = preferences;
+    sharedPreferences = preferences;
   }
 
   //create Shared Prefernce

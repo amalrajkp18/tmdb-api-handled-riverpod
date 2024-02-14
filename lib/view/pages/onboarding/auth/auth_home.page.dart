@@ -3,10 +3,10 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:movie_app/controller/onboard/onboard_controller.dart';
 import 'package:movie_app/core/colors/app_colors.dart';
+import 'package:movie_app/core/constants/app_text.dart';
 import 'package:movie_app/core/utils/app_units.dart';
 import 'package:movie_app/view/pages/main_page/main_page.dart';
-
-import '../../../widgets/buttons/app_text_button_widget.dart';
+import 'package:movie_app/view/widgets/buttons/app_text_button_widget.dart';
 
 class AuthHomePage extends ConsumerWidget {
   const AuthHomePage({super.key});
@@ -39,7 +39,7 @@ class AuthHomePage extends ConsumerWidget {
                   const Spacer(flex: 30),
                   // main text
                   Text(
-                    "iNox",
+                    AppText.appTitle,
                     style: GoogleFonts.montserrat(
                       fontWeight: FontWeight.bold,
                       fontSize: context.width(0.12),
@@ -61,6 +61,7 @@ class AuthHomePage extends ConsumerWidget {
                   // button subscriber
                   AppTextButtonWidget(
                     onpressed: () {
+                      // if button click completed user logged this screen not shown
                       ref
                           .read(onboardControllerProvider.notifier)
                           .onboardIsLoaded();
@@ -74,6 +75,7 @@ class AuthHomePage extends ConsumerWidget {
                   // button  sign in
                   AppTextButtonWidget(
                     onpressed: () {
+                      // if button click completed user logged this screen not shown
                       ref
                           .read(onboardControllerProvider.notifier)
                           .onboardIsLoaded();

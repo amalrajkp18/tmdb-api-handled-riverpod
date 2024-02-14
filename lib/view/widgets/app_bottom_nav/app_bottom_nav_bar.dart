@@ -24,8 +24,8 @@ class AppBottomNavBar extends StatelessWidget {
                 title: const Text("Home"),
               ),
               SalomonBottomBarItem(
-                icon: const Icon(Icons.bookmarks_outlined),
-                title: const Text("Saved"),
+                icon: const Icon(Icons.video_collection_sharp),
+                title: const Text("Shorts"),
               ),
               SalomonBottomBarItem(
                 icon: const Icon(Icons.search),
