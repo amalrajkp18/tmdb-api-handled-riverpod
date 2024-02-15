@@ -1,24 +1,25 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 
-part of 'trending_all.dart';
+part of 'home_page_api.dart';
 
 // **************************************************************************
 // RiverpodGenerator
 // **************************************************************************
 
-String _$trendingAllHash() => r'3903e7b8a7ec6bbbd03afb96f7e0a32c2d102d4b';
+String _$homePageApiHash() => r'9bf5a8bfae928c1660517b2eb95118ae2dbd7619';
 
-/// See also [trendingAll].
-@ProviderFor(trendingAll)
-final trendingAllProvider = AutoDisposeFutureProvider<MovieAllModel>.internal(
-  trendingAll,
-  name: r'trendingAllProvider',
+/// See also [homePageApi].
+@ProviderFor(homePageApi)
+final homePageApiProvider =
+    AutoDisposeFutureProvider<List<MovieAllModel>>.internal(
+  homePageApi,
+  name: r'homePageApiProvider',
   debugGetCreateSourceHash:
-      const bool.fromEnvironment('dart.vm.product') ? null : _$trendingAllHash,
+      const bool.fromEnvironment('dart.vm.product') ? null : _$homePageApiHash,
   dependencies: null,
   allTransitiveDependencies: null,
 );
 
-typedef TrendingAllRef = AutoDisposeFutureProviderRef<MovieAllModel>;
+typedef HomePageApiRef = AutoDisposeFutureProviderRef<List<MovieAllModel>>;
 // ignore_for_file: type=lint
 // ignore_for_file: subtype_of_sealed_class, invalid_use_of_internal_member, invalid_use_of_visible_for_testing_member
