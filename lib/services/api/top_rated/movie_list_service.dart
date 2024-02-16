@@ -1,13 +1,13 @@
 import 'dart:developer';
 
 import 'package:dio/dio.dart';
-import 'package:movie_app/core/constants/api_appends.dart';
+import 'package:movie_app/core/constants/api_append.dart';
 import 'package:movie_app/core/main_failure/main_failure.dart';
 import 'package:movie_app/model/movie_all_model/movie_all_model.dart';
 
 class TopRatedMovieService {
   final Dio dio = Dio(
-    BaseOptions(baseUrl: ApiAppends.baseUrl),
+    BaseOptions(baseUrl: ApiAppend.baseUrl),
   );
 
   Future<MovieAllModel> fetchData() async {
@@ -19,7 +19,7 @@ class TopRatedMovieService {
         },
         options: Options(
           headers: {
-            'Authorization': 'Bearer ${ApiAppends.accesToken}',
+            'Authorization': 'Bearer ${ApiAppend.accesToken}',
             'Content-Type': 'application/json',
           },
         ),

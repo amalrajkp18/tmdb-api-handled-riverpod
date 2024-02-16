@@ -3,7 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:movie_app/controller/now_playing_movies/now_playing_movies.dart';
 import 'package:movie_app/controller/top_rated_movies/top_rated_movies.dart';
-import 'package:movie_app/core/constants/api_appends.dart';
+import 'package:movie_app/core/constants/api_append.dart';
 import 'package:movie_app/core/constants/app_text.dart';
 import 'package:movie_app/core/utils/white_space_box.dart';
 import 'package:movie_app/view/pages/home/widgets/image_list_slider_widget.dart';
