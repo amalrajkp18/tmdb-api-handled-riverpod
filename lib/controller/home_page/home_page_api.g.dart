@@ -6,12 +6,12 @@ part of 'home_page_api.dart';
 // RiverpodGenerator
 // **************************************************************************
 
-String _$homePageApiHash() => r'9bf5a8bfae928c1660517b2eb95118ae2dbd7619';
+String _$homePageApiHash() => r'35bb7b2e63555720c984c6a00e68180d71945988';
 
 /// See also [homePageApi].
 @ProviderFor(homePageApi)
 final homePageApiProvider =
-    AutoDisposeFutureProvider<List<MovieAllModel>>.internal(
+    AutoDisposeFutureProvider<List<MovieResultModel>>.internal(
   homePageApi,
   name: r'homePageApiProvider',
   debugGetCreateSourceHash:
@@ -20,6 +20,6 @@ final homePageApiProvider =
   allTransitiveDependencies: null,
 );
 
-typedef HomePageApiRef = AutoDisposeFutureProviderRef<List<MovieAllModel>>;
+typedef HomePageApiRef = AutoDisposeFutureProviderRef<List<MovieResultModel>>;
 // ignore_for_file: type=lint
 // ignore_for_file: subtype_of_sealed_class, invalid_use_of_internal_member, invalid_use_of_visible_for_testing_member

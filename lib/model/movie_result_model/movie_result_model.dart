@@ -2,12 +2,12 @@
 
 import 'package:freezed_annotation/freezed_annotation.dart';
 
-part 'result_model.freezed.dart';
-part 'result_model.g.dart';
+part 'movie_result_model.freezed.dart';
+part 'movie_result_model.g.dart';
 
 @freezed
-class ResultModel with _$ResultModel {
-  factory ResultModel({
+class MovieResultModel with _$MovieResultModel {
+  factory MovieResultModel({
     bool? adult,
     @JsonKey(name: "backdrop_path") String? backdropPath,
     int? id,
@@ -27,8 +27,8 @@ class ResultModel with _$ResultModel {
     @JsonKey(name: "original_name") String? originalName,
     @JsonKey(name: "first_air_date") DateTime? firstAirDate,
     @JsonKey(name: "origin_country") List<String>? originCountry,
-  }) = _ResultModel;
+  }) = _MovieResultModel;
 
-  factory ResultModel.fromJson(Map<String, dynamic> json) =>
-      _$ResultModelFromJson(json);
+  factory MovieResultModel.fromJson(Map<String, dynamic> json) =>
+      _$MovieResultModelFromJson(json);
 }

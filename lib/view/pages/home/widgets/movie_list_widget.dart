@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:movie_app/core/constants/api_appends.dart';
+import 'package:movie_app/core/constants/api_append.dart';
 import 'package:movie_app/core/utils/app_units.dart';
 import 'package:movie_app/core/utils/white_space_box.dart';
-import 'package:movie_app/model/result_model/result_model.dart';
+import 'package:movie_app/model/movie_result_model/movie_result_model.dart';
 
 class MovieListWidget extends StatelessWidget {
   const MovieListWidget({
@@ -13,7 +13,7 @@ class MovieListWidget extends StatelessWidget {
   });
   final String title;
 
-  final List<ResultModel> result;
+  final List<MovieResultModel> result;
 
   @override
   Widget build(BuildContext context) {
@@ -54,7 +54,7 @@ class MovieListWidget extends StatelessWidget {
                     image: DecorationImage(
                       fit: BoxFit.cover,
                       image: NetworkImage(
-                          "${ApiAppends.imageUrl}${result[index].posterPath}"),
+                          "${ApiAppend.imageUrl}${result[index].posterPath}"),
                     ),
                   ),
                 ),

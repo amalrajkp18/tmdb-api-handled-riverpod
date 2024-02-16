@@ -1,15 +1,15 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
-import 'package:movie_app/core/constants/api_appends.dart';
+import 'package:movie_app/core/constants/api_append.dart';
 import 'package:movie_app/core/utils/app_units.dart';
-import 'package:movie_app/model/result_model/result_model.dart';
+import 'package:movie_app/model/movie_result_model/movie_result_model.dart';
 
 class ImageListSliderWidget extends StatelessWidget {
   const ImageListSliderWidget({
     super.key,
     required this.results,
   });
-  final List<ResultModel> results;
+  final List<MovieResultModel> results;
   @override
   Widget build(BuildContext context) {
     return CarouselSlider.builder(
@@ -19,7 +19,7 @@ class ImageListSliderWidget extends StatelessWidget {
           context.width(0.04),
         ),
         child: Image.network(
-          "${ApiAppends.imageUrl}${results[index].posterPath}",
+          "${ApiAppend.imageUrl}${results[index]}",
           fit: BoxFit.cover,
         ),
       ),

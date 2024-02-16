@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:movie_app/core/colors/app_colors.dart';
-import 'package:movie_app/core/constants/api_appends.dart';
+import 'package:movie_app/core/constants/api_append.dart';
 import 'package:movie_app/core/utils/app_units.dart';
 import 'package:movie_app/core/utils/white_space_box.dart';
 import 'package:movie_app/model/result_model/result_model.dart';
@@ -63,7 +63,7 @@ class TopRateMovieListWidget extends StatelessWidget {
                         image: DecorationImage(
                           fit: BoxFit.cover,
                           image: NetworkImage(
-                              "${ApiAppends.imageUrl}${result[index].posterPath}"),
+                              "${ApiAppend.imageUrl}${result[index].posterPath}"),
                         ),
                       ),
                     ),

@@ -33,7 +33,7 @@ class HomePage extends ConsumerWidget {
                   // height spacer
                   WhiteSpaceBox.spacerBox(context: context, height: 0.02),
                   // image slider section
-                  ImageListSliderWidget(results: data[0].results),
+                  ImageListSliderWidget(results: data),
                   // height spacer
                   WhiteSpaceBox.spacerBox(context: context, height: 0.02),
                   //Top Rated movie list

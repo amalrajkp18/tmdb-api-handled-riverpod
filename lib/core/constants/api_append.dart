@@ -1,4 +1,4 @@
-class ApiAppends {
+class ApiAppend {
   //base url tmdb
   static const String baseUrl = 'https://api.themoviedb.org/3/';
 
