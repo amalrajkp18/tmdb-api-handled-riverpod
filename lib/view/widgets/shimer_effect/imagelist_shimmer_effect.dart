@@ -25,11 +25,15 @@ class MovieListShimmer extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             // title
-            Text(
-              title,
-              style: GoogleFonts.montserrat(
-                fontWeight: FontWeight.w500,
-                fontSize: context.width(0.05),
+            Shimmer.fromColors(
+              baseColor: Colors.grey.withOpacity(0.2),
+              highlightColor: Colors.grey.withOpacity(0.4),
+              child: Text(
+                title,
+                style: GoogleFonts.montserrat(
+                  fontWeight: FontWeight.w500,
+                  fontSize: context.width(0.05),
+                ),
               ),
             ),
             // image list

@@ -4,18 +4,18 @@ import 'package:movie_app/core/colors/app_colors.dart';
 import 'package:movie_app/core/constants/api_append.dart';
 import 'package:movie_app/core/utils/app_units.dart';
 import 'package:movie_app/core/utils/white_space_box.dart';
-import 'package:movie_app/model/result_model/result_model.dart';
+import 'package:movie_app/model/movie_info_model/movie_info_model.dart';
 import 'package:stroke_text/stroke_text.dart';
 
-class TopRateMovieListWidget extends StatelessWidget {
-  const TopRateMovieListWidget({
+class TrendingMovieListWidget extends StatelessWidget {
+  const TrendingMovieListWidget({
     super.key,
     required this.title,
     required this.result,
   });
   final String title;
 
-  final List<ResultModel> result;
+  final List<MovieInfoModel> result;
 
   @override
   Widget build(BuildContext context) {

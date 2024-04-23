@@ -3,7 +3,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:movie_app/core/constants/api_append.dart';
 import 'package:movie_app/core/utils/app_units.dart';
 import 'package:movie_app/core/utils/white_space_box.dart';
-import 'package:movie_app/model/result_model/result_model.dart';
+import 'package:movie_app/model/movie_info_model/movie_info_model.dart';
 
 class MovieListWidget extends StatelessWidget {
   const MovieListWidget({
@@ -13,7 +13,7 @@ class MovieListWidget extends StatelessWidget {
   });
   final String title;
 
-  final List<ResultModel> result;
+  final List<MovieInfoModel> result;
 
   @override
   Widget build(BuildContext context) {
